@@ -1,5 +1,9 @@
 site_name: Coding Growth
-site_url: https://mydomain.org/mysite
+site_url: https://alapakam-dorababu.github.io/coding-growth/
+site_author: Alapakam Dorababu
+repo_url: https://github.com/alapakam-dorababu/coding-growth
+repo_name: alapakam-dorababu/coding-growth
+
 theme:
   name: material
   features:
