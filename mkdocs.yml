@@ -1,0 +1,95 @@
+site_name: Coding Growth
+site_url: https://mydomain.org/mysite
+theme:
+  name: material
+  features:
+    - content.tooltips
+    - content.code.copy
+    - search.suggest
+    - search.highlight
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.footer
+    - toc.follow
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/lightbulb
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/lightbulb-outline
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+  icon:
+    tag:
+      python: simple/python
+      django: simple/django
+      js: simple/javascript
+      html: simple/html5
+
+extra:
+  #To remove "Made with Material for MkDocs" notice from footer
+  # generator: false
+  tags:
+    Python: python
+    Django: django
+    JavaScript: js
+    HTML: html
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/alapakam-dorababu
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/
+
+plugins:
+  - blog:
+      blog_dir: .
+      blog_toc: true
+      pagination_per_page: 5
+      post_readtime: true  # Optional, shows estimated reading time
+      post_url_format: "{slug}"
+  - search:
+      separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  - tags
+    
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.arithmatex:
+      generic: true
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.mark
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - md_in_html
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+copyright: |
+  &copy; 2025 <a href="https://github.com/alapakam-dorababu"  target="_blank" rel="noopener">Alapakam Dorababu</a>
+
+
